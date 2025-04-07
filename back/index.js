@@ -11,17 +11,19 @@ dotenv.config({ path: "./config/config.env" });
 const app = express();
 
 
+
 app.use(cors({
-  origin: "http://localhost:5173", 
-  methods: ["GET", "POST"], 
-  credentials: true 
+  origin: ["http://localhost:5173", "https://my-portfolio07.vercel.app"],
+  methods: ["GET", "POST"],
+  credentials: true
 }));
+
 
 // Middleware
 app.use(express.json());
 
 // Routes
-app.use("/api", contactRoutes); // Contact route use karna
+app.use("/api", contactRoutes); 
 
 // MongoDB Connection
 mongoose
