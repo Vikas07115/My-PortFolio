@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import "../App.css";
 
 const EducationProjects = () => {
@@ -45,33 +45,27 @@ const EducationProjects = () => {
         {[
           {
             title: "Mehta's Restaurant",
-            github: "https://github.com/yourgithub/mehtas-restaurant",
-            demo: "https://mehtas-restaurant-live-demo.com",
+            github: "https://github.com/Vikas07115/Mehta-s-Restaurant",
           },
           {
             title: "My Portfolio",
-            github: "https://github.com/yourgithub/my-portfolio",
-            demo: "https://my-portfolio-live-demo.com",
+            github: "https://github.com/Vikas07115/My-PortFolio",
           },
           {
             title: "Uttarakhand's Jewels",
-            github: "https://github.com/yourgithub/uttarakhand-jewels",
-            demo: "https://uttarakhand-jewels-live-demo.com",
+            github: "https://github.com/Vikas07115/Uttrakhand-jewels",
           },
           {
             title: "Mehta's Events",
-            github: "https://github.com/yourgithub/mehtas-events",
-            demo: "https://mehtas-events-live-demo.com",
+            github: "https://github.com/Vikas07115/Mehta-Events",
           },
           {
             title: "UK Gym",
-            github: "https://github.com/yourgithub/uk-gym",
-            demo: "https://uk-gym-live-demo.com",
+            github: "https://github.com/Vikas07115/Uk-Gym",
           },
           {
             title: "UK Villa",
-            github: "https://github.com/yourgithub/uk-villa",
-            demo: "https://uk-villa-live-demo.com",
+            github: "https://github.com/Vikas07115/Uk-Villas",
           },
         ].map((project, index) => (
           <div key={index} className="project-item">
@@ -84,9 +78,6 @@ const EducationProjects = () => {
               >
                 <FaGithub />
               </a>
-              <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkAlt />
-              </a>
             </div>
           </div>
         ))}
@@ -96,7 +87,7 @@ const EducationProjects = () => {
           <p>Check out my GitHub for more projects!</p>
           <div className="github-link">
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/Vikas07115"
               target="_blank"
               rel="noopener noreferrer"
             >
