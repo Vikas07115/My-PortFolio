@@ -1,0 +1,7 @@
+front/node_modules/ 
+back/node_modules/ 
+**/.env 
+*.log 
+front/dist/ 
+.DS_Store 
+Thumbs.db 
