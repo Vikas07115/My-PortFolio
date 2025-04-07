@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Swal from "sweetalert2";
@@ -17,7 +18,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch("https://portfolio-backend.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
